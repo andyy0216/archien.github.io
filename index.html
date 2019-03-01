@@ -1,7 +1,20 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>FLASH音樂庫</title>
+<script type="text/javascript" src="http://s.blog.xuite.net/_public/plugin/swfobject_source.js"></script>
+</head>
 <body>
 <h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.WWWWWWWW</p>
+<p>I'm hosted with GitHub Pages.</p>
+<img src='http://grm.cdn.hinet.net/xuite/c/f/7/b/11732000/blog_102/dv/11712964/11712964.swf'>
+<div id="flashPlayer1"></div>
+<script type="text/javascript">
+var so = new SWFObject("http://grm.cdn.hinet.net/xuite/c/f/7/b/11732000/blog_102/dv/11712964/11712964.swf", "mymusic", "192", "20", "7", "#FFFFFF");
+so.addVariable("son","G弦之歌.mp3");
+so.addVariable("autoplay","1");
+so.addVariable("autoreplay","0");
+so.write("flashPlayer1");
+</script>
 </body>
 </html>
